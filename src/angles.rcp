@@ -1,0 +1,43 @@
+/****************************************************************************
+** Maze Hiker
+** Copyright 2003 Aaron Curtis
+** 
+** This file is part of Maze Hiker.
+** 
+** Maze Hiker is free software; you can redistribute it and/or modify
+** it under the terms of the GNU General Public License as published by
+** the Free Software Foundation; either version 2 of the License, or
+** (at your option) any later version.
+** 
+** Maze Hiker is distributed in the hope that it will be useful,
+** but WITHOUT ANY WARRANTY; without even the implied warranty of
+** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+** GNU General Public License for more details.
+** 
+** You should have received a copy of the GNU General Public License
+** along with Maze Hiker; if not, write to the Free Software
+** Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+****************************************************************************/
+
+
+HEX "BLAH" ID 1
+129   130   131   132   133   134   135   136
+137   138   139   141   142   143   144   145
+147   148   149   150   152   153   154   156
+157   159   160   161   163   164   166   167
+169   170   172   173   175   176   178   180
+181   183   185   186   188   190   191   193
+195   197   198   200   202   204   206   208
+209   211   213   215   217   219   221   223
+225   227   229   231   233   235   237   239
+241   243   245   247   249   251   253   255
+001   003   005   007   009   011   013   015
+017   019   021   023   025   027   029   031
+033   035   037   039   041   043   045   047
+048   050   052   054   056   058   059   061
+063   065   066   068   070   071   073   075
+076   078   080   081   083   084   086   087
+089   090   092   093   095   096   097   099
+100   102   103   104   106   107   108   109
+111   112   113   114   115   117   118   119
+120   121   122   123   124   125   126   127
