@@ -21,7 +21,9 @@
 
 
 #include <PalmOS.h>
+#ifdef SONY_CLIE
 #include <sony/SonyCLIE.h>
+#endif
 #include "palm.h"
 #include "main.h"
 
@@ -160,7 +162,9 @@ Boolean preprocess(EventPtr eventptr)
 
 UInt16 initdevice(void)
 {
+#ifdef SONY_CLIE
 	UInt16 refnum;
+#endif
 	UInt32 featureval;
 	UInt32 width;
 	UInt32 height;
@@ -202,6 +206,7 @@ UInt16 initdevice(void)
 		WinScreenGetAttribute(winScreenWidth, &width);
 		WinScreenGetAttribute(winScreenHeight, &height);
 	}
+#ifdef SONY_CLIE
 	else if((!FtrGet(sonySysFtrCreator, sonySysFtrNumSysInfoP, &featureval))
 	&& (((SonySysFtrSysInfoP)featureval)->libr & sonySysFtrSysInfoLibrHR)
 	&& ((!SysLibFind(sonySysLibNameHR, &refnum)) || (!SysLibLoad('libr', sonySysFileCHRLib, &refnum)))
@@ -218,6 +223,7 @@ UInt16 initdevice(void)
 
 		HRClose(refnum);
 	}
+#endif
 	else
 	{
 		WinScreenMode(winScreenModeGetDefaults, &width, &height, NULL, NULL);
